@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>    Covid-19 alert Tab Layout project      </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+      
+        <div class="covid">
+           <h1> COVID-19 PREPAREDNESS</h1>
+           <p>By Joseph Lama</p>
+        </div>
+        <div class="hero">
+            <div class="btn-box">
+                <button id="btn1" onclick="openWASH()"><i class="fa fa-asterisk"></i>WASH HANDS</button>
+                <button id="btn2" onclick="openMASK()"><i class="fa fa-comments"></i>WEAR MASKS</button>
+                <button id="btn3" onclick="openSOCIAL()"><i class="fa fa-angellist"></i></i>KEEP SOCIAL DISTANCE</button>
+            </div>
+            <div id="content1" class="content">
+              <div class="content-left">
+                  <h1>Wash your hands properly</h1>
+                  <p> Washing your hands is one of the most important steps to curbing Covid-19. 
+                      The illustration shows you how you can wash your hands
+                      the right way as one of the preventive measures against this deadly disease. <br>
+                    Use a sanitizer whenever possible. When washing your hands, ensure you wash thoroughly with soap and water</p>
+                      <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html" target="_blank">HOW TO WASH HANDS PROPERLY</a>
+              </div>
+              <div class="content-right">
+                    <img class="img" src="images/11.png" />
+                  
+            </div>
+        </div>
+        <div id="content2" class="content">
+            <div class="content-left">
+                <h1>Masks are critical in curbing Covid-19 </h1>
+                <p> Always make sure you wear a mask before stepping out in public. <br> Masks assist in preventing particles from other people (or in the air) from
+                    coming into direct contact with your face. This lowers the possibility of infection. Do not share masks and always ensure they are worn properly to be
+                    effective.
+                 </p>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293989/" target="_blank">HOW MASKS PREVENT DISEASES</a>
+            </div>
+            <div class="content-right">
+                  <img class="img" src="images/mas_layout.png" />
+                         </div>
+      </div>
+      <div id="content3" class="content">
+        <div class="content-left">
+            <h1>Always maintain social distance </h1>
+            <p> When in public, maintain social distance (at least 6 feet) between two people. <br> Avoid coming into contact with people who have
+                flu-like symptoms. Avoid hugging or kissing as this will facilitate the spread of the disease. Covid-19 virus is spread through touch and
+                through coughing/sneezing. If you maintain a healthy social distance, you can play your role in eliminating this menacing threat.
+                            </p>
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html" target="_blank">MORE ABOUT SOCIAL DISTANCING</a>
+        </div>
+        <div class="content-right">
+              <img class="img" src="images/social-01.png" />
+                     </div>
+  </div>
+
+
+  <script>
+      var content1 = document.getElementById("content1");
+      var content2 = document.getElementById("content2");
+      var content3 = document.getElementById("content3");
+      var btn1 = document.getElementById("btn1");
+      var btn2 = document.getElementById("btn2");
+      var btn3 = document.getElementById("btn3");
+
+        function openWASH(){
+        content1.style.transform="translateX(0)";
+        content2.style.transform="translateX(100%)";
+        content3.style.transform="translateX(100%)";
+        btn1.style.color="#ff7849";
+        btn2.style.color="#000";
+        btn3.style.color="#000";
+        content1.style.transitionDelay="0.3s"
+        content2.style.transitionDelay="0s"
+        content3.style.transitionDelay="0s"
+        }
+        function openMASK(){
+        content1.style.transform="translateX(100%)";
+        content2.style.transform="translateX(0)";
+        content3.style.transform="translateX(100%)";
+        btn1.style.color="#000";
+        btn2.style.color="#ff7849";
+        btn3.style.color="#000";
+        content2.style.transitionDelay="0.3s"
+        content1style.transitionDelay="0s"
+        content3.style.transitionDelay="0s"
+        }
+        function openSOCIAL(){
+        content1.style.transform="translateX(100%)";
+        content2.style.transform="translateX(100%)";
+        content3.style.transform="translateX(0)";
+        btn1.style.color="#000";
+        btn2.style.color="#000";
+        btn3.style.color="#ff7849";
+        content3.style.transitionDelay="0.3s"
+        content2.style.transitionDelay="0s"
+        content1.style.transitionDelay="0s"
+        }
+    
+  </script>
+    </body>
+</html>
